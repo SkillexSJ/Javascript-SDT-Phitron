@@ -1,0 +1,86 @@
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-weight: 700;
+  color: #343a40 !important;
+}
+.search-container {
+  background: url("https://www.themealdb.com/images/media/meals/wvpsxx1468256321.jpg")
+    no-repeat center center;
+  background-size: cover;
+  padding: 5rem 1rem;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  position: relative;
+}
+.search-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+}
+.search-box {
+  position: relative;
+  z-index: 1;
+}
+.search-box h1 {
+  color: white;
+  font-weight: 700;
+}
+.search-box .form-control {
+  height: 50px;
+  border-radius: 25px;
+  padding-left: 20px;
+}
+.search-box .btn {
+  height: 50px;
+  border-radius: 25px;
+}
+#results-title {
+  font-weight: 600;
+  color: #343a40;
+}
+.meal-card {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.meal-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.meal-card img {
+  height: 200px;
+  object-fit: cover;
+}
+.meal-card .card-body {
+  background-color: #ffffff;
+}
+.meal-card .card-title {
+  font-weight: 600;
+  color: #343a40;
+}
+.modal-header {
+  background-color: #343a40;
+  color: white;
+}
+.modal-title {
+  font-weight: 600;
+}
+.modal-body img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+.modal-body h5 {
+  font-weight: 600;
+  margin-top: 1rem;
+}
